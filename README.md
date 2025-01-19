@@ -1,4 +1,4 @@
-# Matrimony Platform
+# Matrimony Platform - Shubho Porinoy-Client
 
 A responsive Matrimony platform built with the MERN stack (MongoDB, Express, React, Node.js). This platform helps users find potential life partners by displaying biodatas and offering features like filtering, requesting contact information, and viewing success stories.
 
