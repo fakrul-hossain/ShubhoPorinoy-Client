@@ -119,7 +119,7 @@ const Navbar = () => {
                 <img
                   src={user.photoURL || "https://via.placeholder.com/40"}
                   alt="User Profile"
-                  className="h-10 w-10 rounded-full cursor-pointer border-2 border-primary hover:border-teal-700"
+                  className="h-10 w-10 rounded-full cursor-pointer border-2 border-primary hover:border-secondary"
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 />
 
