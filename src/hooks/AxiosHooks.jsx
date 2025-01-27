@@ -9,7 +9,7 @@ const useAxiosSecure = () => {
   const navigate = useNavigate();
 
   const axiosSecure = axios.create({
-    baseURL: "https://your-api-base-url.com", // Replace with your API base URL
+    baseURL: import.meta.env.VITE_API_URL, // Replace with your API base URL
   });
 
   useEffect(() => {
