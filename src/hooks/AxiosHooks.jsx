@@ -4,43 +4,43 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
+const useAxiosSecure = () => {
+  const { logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
 
-const AxiosHooks = () => {
-    
-    
-    const {logOut} = useContext(AuthContext)
-    const navigate = useNavigate();
-    
- 
-    useEffect(() => {
-        axios.interceptors.response.use(
-          (result) => {
-            return result;
-          },
-          (error) => {
-            console.log(error.message);
-    
-            if (error.status === 401 || error.status === 403) {
-              Swal.fire({
-                position: "center",
-                icon: "error",
-                title: "Something Went Wrong",
-                showConfirmButton: false,
-                timer: 1000,
-              });
-              logOut();
-              navigate("/login");
-            }
-          }
-        );
-      }, [navigate, logOut]);
-    //   return AxiosSecure;
+  const axiosSecure = axios.create({
+    baseURL: "https://your-api-base-url.com", // Replace with your API base URL
+  });
+
+  useEffect(() => {
+    const interceptor = axiosSecure.interceptors.response.use(
+      (response) => response,
+      (error) => {
+        console.error(error.message);
+
+        if (error.response && (error.response.status === 401 || error.response.status === 403)) {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Unauthorized or Forbidden",
+            showConfirmButton: false,
+            timer: 1000,
+          });
+          logOut();
+          navigate("/login");
+        }
+
+        return Promise.reject(error);
+      }
+    );
+
+    // Cleanup function to remove the interceptor
+    return () => {
+      axiosSecure.interceptors.response.eject(interceptor);
     };
+  }, [logOut, navigate, axiosSecure]);
 
+  return axiosSecure;
+};
 
-
-
-
-
-
-export default AxiosHooks;
+export default useAxiosSecure;
