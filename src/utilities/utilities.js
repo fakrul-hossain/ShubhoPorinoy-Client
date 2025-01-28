@@ -1,23 +1,14 @@
 import axios from "axios";
 
- async function assignmentsDetails(id) {
-  const response = await axios.get(`${import.meta.env.VITE_API_URL}/assignments/${id}`,{
-    withCredentials: true
-  });
 
-  return response.data;
+export const SaveUser = async (userData) => {
+  try {
+    await axios.post(`http://localhost:5000/register?/${userData?.email}`, {
+      name: userData?.displayName,
+      image: userData?.photoURL,
+      email: userData?.email,
+    });
+  } catch (error) {
+    console.log(error.message);
 }
- async function updateAssignment(id) {
-  const response = await axios.get(`${import.meta.env.VITE_API_URL}/assignments/${id}`,{
-    withCredentials: true
-  });
-
-  return response.data;
-}
-
-
-
-export  {
-    assignmentsDetails,
-    updateAssignment,
-}
+};

@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { SaveUser } from "../../utilities/utilities";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -19,24 +20,28 @@ const SignUp = () => {
     const img = e.target.img.value;
 
     const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
-    if (!regex.test(password)) {
-      Swal.fire(
-        "Password Error",
-        "Password must contain an uppercase letter, a lowercase letter, and be at least 6 characters long.",
-        "error"
-      );
-      return;
-    }
+    // if (!regex.test(password)) {
+    //   Swal.fire(
+    //     "Password Error",
+    //     "Password must contain an uppercase letter, a lowercase letter, and be at least 6 characters long.",
+    //     "error"
+    //   );
+    //   return;
+    // }
 
     createUser(email, password)
-      .then(() => {
+      .then((data) => {
         Swal.fire("Success", "Registration successful!", "success");
-        updateAUser(name, img).then(() => {
-          setUser((prev) => ({
+        updateAUser(name, img).then(async () => {
+          await SaveUser(data.user);
+          console.log(data.user)
+          setUser( async(prev) => ({
+            
             ...prev,
             displayName: name,
             photoURL: img,
           }));
+          
           navigate("/");
         });
       })
