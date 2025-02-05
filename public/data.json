@@ -1,6 +1,5 @@
 [
     {
-        "_id": "67985e64db54af2703595d01",
         "biodataId": 1,
         "userId": "603d8b2f4d45e88d3d1e5451",
         "biodataType": "Male",
@@ -20,13 +19,12 @@
         "expectedPartnerWeight": 55,
         "contactEmail": "arif.rahman@example.com",
         "contactPhone": "01712345678",
-        "isPremium": false,
+        "isPremium": "pending",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d02",
         "biodataId": 2,
         "userId": "603d8b2f4d45e88d3d1e5452",
         "biodataType": "Female",
@@ -46,13 +44,13 @@
         "expectedPartnerWeight": 65,
         "contactEmail": "mithila.rahman@example.com",
         "contactPhone": "0185678901",
-        "isPremium": false,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d03",
+
         "biodataId": 3,
         "userId": "603d8b2f4d45e88d3d1e5453",
         "biodataType": "Male",
@@ -72,13 +70,13 @@
         "expectedPartnerWeight": 55,
         "contactEmail": "imran.hossain@example.com",
         "contactPhone": "0179876543",
-        "isPremium": true,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d04",
+
         "biodataId": 4,
         "userId": "603d8b2f4d45e88d3d1e5454",
         "biodataType": "Female",
@@ -98,13 +96,13 @@
         "expectedPartnerWeight": 60,
         "contactEmail": "sadia.afroz@example.com",
         "contactPhone": "0198765432",
-        "isPremium": false,
+        "isPremium": "premium",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d05",
+
         "biodataId": 5,
         "userId": "603d8b2f4d45e88d3d1e5455",
         "biodataType": "Male",
@@ -124,13 +122,13 @@
         "expectedPartnerWeight": 58,
         "contactEmail": "naeem.hasan@example.com",
         "contactPhone": "0175678901",
-        "isPremium": true,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d06",
+
         "biodataId": 6,
         "userId": "603d8b2f4d45e88d3d1e5456",
         "biodataType": "Male",
@@ -150,13 +148,13 @@
         "expectedPartnerWeight": 60,
         "contactEmail": "junaid.khan@example.com",
         "contactPhone": "0172345679",
-        "isPremium": false,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d07",
+
         "biodataId": 7,
         "userId": "603d8b2f4d45e88d3d1e5457",
         "biodataType": "Female",
@@ -176,13 +174,13 @@
         "expectedPartnerWeight": 65,
         "contactEmail": "nabila.sultana@example.com",
         "contactPhone": "0176789012",
-        "isPremium": false,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d08",
+
         "biodataId": 8,
         "userId": "603d8b2f4d45e88d3d1e5458",
         "biodataType": "Male",
@@ -202,13 +200,13 @@
         "expectedPartnerWeight": 55,
         "contactEmail": "shakil.ahmed@example.com",
         "contactPhone": "0191234567",
-        "isPremium": true,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d09",
+
         "biodataId": 9,
         "userId": "603d8b2f4d45e88d3d1e5459",
         "biodataType": "Female",
@@ -228,13 +226,13 @@
         "expectedPartnerWeight": 60,
         "contactEmail": "ayesha.begum@example.com",
         "contactPhone": "0182345679",
-        "isPremium": false,
+        "isPremium": "premium",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d10",
+
         "biodataId": 10,
         "userId": "603d8b2f4d45e88d3d1e5460",
         "biodataType": "Male",
@@ -254,13 +252,13 @@
         "expectedPartnerWeight": 58,
         "contactEmail": "rashed.khan@example.com",
         "contactPhone": "0192345678",
-        "isPremium": true,
+        "isPremium": "premium",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d11",
+
         "biodataId": 11,
         "userId": "603d8b2f4d45e88d3d1e5461",
         "biodataType": "Female",
@@ -280,13 +278,13 @@
         "expectedPartnerWeight": 65,
         "contactEmail": "sabrina.rahman@example.com",
         "contactPhone": "01812345678",
-        "isPremium": false,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d12",
+
         "biodataId": 12,
         "userId": "603d8b2f4d45e88d3d1e5462",
         "biodataType": "Male",
@@ -306,13 +304,13 @@
         "expectedPartnerWeight": 58,
         "contactEmail": "imran.hossain@example.com",
         "contactPhone": "01787654321",
-        "isPremium": true,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d13",
+
         "biodataId": 13,
         "userId": "603d8b2f4d45e88d3d1e5463",
         "biodataType": "Female",
@@ -332,13 +330,13 @@
         "expectedPartnerWeight": 65,
         "contactEmail": "tania.akter@example.com",
         "contactPhone": "0176543210",
-        "isPremium": false,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Islam"
       },
       {
-        "_id": "67985e64db54af2703595d14",
+
         "biodataId": 14,
         "userId": "603d8b2f4d45e88d3d1e5464",
         "biodataType": "Male",
@@ -358,13 +356,13 @@
         "expectedPartnerWeight": 55,
         "contactEmail": "shuvo.das@example.com",
         "contactPhone": "01923456789",
-        "isPremium": true,
+        "isPremium": "N/A",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Hindu"
       },
       {
-        "_id": "67985e64db54af2703595d15",
+
         "biodataId": 15,
         "userId": "603d8b2f4d45e88d3d1e5465",
         "biodataType": "Female",
@@ -384,13 +382,13 @@
         "expectedPartnerWeight": 60,
         "contactEmail": "rupa.saha@example.com",
         "contactPhone": "0187654321",
-        "isPremium": false,
+        "isPremium": "premium",
         "createdAt": "2025-01-25T14:00:00.000+00:00",
         "updatedAt": "2025-01-25T14:00:00.000+00:00",
         "religion": "Hindu"
       },
         {
-          "_id": "67985e64db54af2703595d16",
+
           "biodataId": 16,
           "userId": "603d8b2f4d45e88d3d1e5466",
           "biodataType": "Male",
@@ -410,13 +408,13 @@
           "expectedPartnerWeight": 55,
           "contactEmail": "sayed.rahman@example.com",
           "contactPhone": "01754321678",
-          "isPremium": true,
+          "isPremium": "N/A",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d17",
+
           "biodataId": 17,
           "userId": "603d8b2f4d45e88d3d1e5467",
           "biodataType": "Female",
@@ -436,13 +434,13 @@
           "expectedPartnerWeight": 70,
           "contactEmail": "mita.parveen@example.com",
           "contactPhone": "0199876543",
-          "isPremium": false,
+          "isPremium": "N/A",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d18",
+
           "biodataId": 18,
           "userId": "603d8b2f4d45e88d3d1e5468",
           "biodataType": "Male",
@@ -462,13 +460,12 @@
           "expectedPartnerWeight": 60,
           "contactEmail": "shah.jahan@example.com",
           "contactPhone": "01755667788",
-          "isPremium": true,
+          "isPremium": "N/A",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d19",
           "biodataId": 19,
           "userId": "603d8b2f4d45e88d3d1e5469",
           "biodataType": "Female",
@@ -488,13 +485,13 @@
           "expectedPartnerWeight": 65,
           "contactEmail": "nazma.begum@example.com",
           "contactPhone": "0184433221",
-          "isPremium": false,
+          "isPremium": "premium",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d20",
+
           "biodataId": 20,
           "userId": "603d8b2f4d45e88d3d1e5470",
           "biodataType": "Male",
@@ -514,13 +511,13 @@
           "expectedPartnerWeight": 55,
           "contactEmail": "samiul.islam@example.com",
           "contactPhone": "01788990011",
-          "isPremium": true,
+          "isPremium": "N/A",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d21",
+
           "biodataId": 21,
           "userId": "603d8b2f4d45e88d3d1e5471",
           "biodataType": "Female",
@@ -540,13 +537,13 @@
           "expectedPartnerWeight": 70,
           "contactEmail": "roksana.akter@example.com",
           "contactPhone": "01832176543",
-          "isPremium": false,
+          "isPremium": "premium",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d22",
+
           "biodataId": 22,
           "userId": "603d8b2f4d45e88d3d1e5472",
           "biodataType": "Male",
@@ -566,13 +563,13 @@
           "expectedPartnerWeight": 58,
           "contactEmail": "rasel.chowdhury@example.com",
           "contactPhone": "01854321765",
-          "isPremium": true,
+          "isPremium": "N/A",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d23",
+
           "biodataId": 23,
           "userId": "603d8b2f4d45e88d3d1e5473",
           "biodataType": "Female",
@@ -592,13 +589,13 @@
           "expectedPartnerWeight": 60,
           "contactEmail": "moumita.ghosh@example.com",
           "contactPhone": "01732321234",
-          "isPremium": false,
+          "isPremium": "pending",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Hindu"
         },
         {
-          "_id": "67985e64db54af2703595d24",
+
           "biodataId": 24,
           "userId": "603d8b2f4d45e88d3d1e5474",
           "biodataType": "Male",
@@ -618,13 +615,13 @@
           "expectedPartnerWeight": 65,
           "contactEmail": "mohammad.farid@example.com",
           "contactPhone": "01712367890",
-          "isPremium": true,
+          "isPremium": "N/A",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Islam"
         },
         {
-          "_id": "67985e64db54af2703595d25",
+
           "biodataId": 25,
           "userId": "603d8b2f4d45e88d3d1e5475",
           "biodataType": "Female",
@@ -644,7 +641,7 @@
           "expectedPartnerWeight": 60,
           "contactEmail": "taniya.roy@example.com",
           "contactPhone": "01845678902",
-          "isPremium": false,
+          "isPremium": "pending",
           "createdAt": "2025-01-25T14:00:00.000+00:00",
           "updatedAt": "2025-01-25T14:00:00.000+00:00",
           "religion": "Hindu"

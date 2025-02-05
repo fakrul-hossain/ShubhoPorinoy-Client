@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import useAxiosSecure from '../hooks/AxiosHooks';
 
 const Biodatas = () => {
@@ -16,12 +16,12 @@ const Biodatas = () => {
     const { data: biodatas = [], isLoading } = useQuery({
         queryKey: ['biodatas', age[0], age[1], biodataType, division],
         queryFn: async () => {
-            console.log("Fetching with params:", { 
-                minAge: age[0], 
-                maxAge: age[1], 
-                type: biodataType, 
-                division 
-            });
+            // console.log("Fetching with params:", { 
+            //     minAge: age[0], 
+            //     maxAge: age[1], 
+            //     type: biodataType, 
+            //     division 
+            // });
     
             const response = await axiosSecure.get('/biodatas', {
                 params: {
@@ -32,9 +32,9 @@ const Biodatas = () => {
                 },
             });
     
-            console.log("Response data:", response.data); // Log the response data
+            // console.log("Response data:", response.data); // Log the response data
             
-            console.log(response.data)
+            // console.log(response.data)
             return response.data;
         },
         
@@ -112,11 +112,13 @@ const Biodatas = () => {
                             <p className="text-sm">Division: {biodata.division}</p>
                             <p className="text-sm">Age: {biodata.age}</p>
                             <p className="text-sm">Occupation: {biodata.occupation}</p>
+                            <NavLink to={`/biodataDetails/${biodata?._id}`}>
                             <button
-                                onClick={() => handleViewProfile(biodata._id)}
+                               
                                 className="block w-full bg-pink-500 text-white py-2 mt-4 rounded">
                                 View Profile
                             </button>
+                            </NavLink>
                         </div>
                     ))
                 )}

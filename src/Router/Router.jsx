@@ -10,6 +10,18 @@ import Biodatas from "../Pages/Biodatas";
 import AboutUs from "../Pages/AboutUs";
 import ContactUs from "../Pages/ContactUs";
 import Dashboard from "../Pages/Dashboard";
+import BoidataDetails from "../Pages/BoidataDetails/BoidataDetails";
+import EditBiodata from "../layout/CustomerLayout/EditBiodata";
+import ViewBiodata from "../layout/CustomerLayout/ViewBiodata";
+import MyContactRequest from "../layout/CustomerLayout/MyContactRequest";
+import FavouritesBiodata from "../layout/CustomerLayout/FavouritesBiodata";
+import ManageUsers from "../layout/AdminLayout/ManageUsers";
+import AdminDashboard from "../layout/AdminLayout/AdminDashboard";
+import ApprovedPremium from "../layout/AdminLayout/ApprovedPremium";
+import ApprovedContactRequests from "../layout/AdminLayout/ApprovedContactRequests";
+import Checkout from "../Pages/Checkout/Checkout";
+import Payment from "../Pages/PrivatePage/Payment/Payment";
+// import EditBiodata from "../layout/AdminLayout/EditBiodata";
 
 const myCreateRoute = createBrowserRouter([
   {
@@ -30,16 +42,14 @@ const myCreateRoute = createBrowserRouter([
         element: <AboutUs></AboutUs>, // About Us page
       },
       {
-        path: "/contact-us",
-        element: <ContactUs></ContactUs>, // Contact Us page
+        path: "/checkout/:id",
+        element: <Payment></Payment>, // Contact Us page
       },
       {
-        path: "/dashboard",
-        element: (
-          <PrivateRoute>
-            <Dashboard></Dashboard>
-          </PrivateRoute>
-        ), // Dashboard is private
+        path: "/biodataDetails/:id",
+        element:<PrivateRoute>
+        <BoidataDetails></BoidataDetails>
+      </PrivateRoute>, // Contact Us page
       },
       {
         path: "/login",
@@ -49,8 +59,54 @@ const myCreateRoute = createBrowserRouter([
         path: "/register",
         element: <SignUp></SignUp>,
       },
+      
     ],
+    
   },
+  {
+    path: "/dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        ),
+        errorElement: <Error></Error>,
+    children: [
+      {
+        path: 'editBiodata',
+        element: <EditBiodata></EditBiodata>
+      },
+      {
+        path: 'view-biodata',
+        element: <ViewBiodata></ViewBiodata>
+      },
+      {
+        path: 'my-contact-request',
+        element: <MyContactRequest></MyContactRequest>
+      },
+      {
+        path: 'favourites-biodata',
+        element: <FavouritesBiodata></FavouritesBiodata>
+      },
+      {
+        path: 'adminDashboard',
+        element: <AdminDashboard></AdminDashboard>
+      },
+      {
+        path: 'manage-users',
+        element: <ManageUsers></ManageUsers>
+      },
+      {
+        path: 'approved-premium',
+        element: <ApprovedPremium></ApprovedPremium>
+      },
+      {
+        path: 'approved-contact-requests',
+        element: <ApprovedContactRequests></ApprovedContactRequests>
+      }
+    ]
+  }
+  // EditBiodata
 ]);
 
 export default myCreateRoute;
