@@ -7,7 +7,7 @@ A responsive Matrimony platform built with the MERN stack (MongoDB, Express, Rea
 - **Admin Password**: adminpassword123
 
 ## Live Site URL
-[Live Site URL](http://your-live-site-url.com)
+[Live Site URL](https://shuboporinoy.netlify.app/)
 
 ## Features
 - **User Authentication**: Secure login and registration with JWT-based authentication.
@@ -25,5 +25,5 @@ A responsive Matrimony platform built with the MERN stack (MongoDB, Express, Rea
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/matrimony-platform.git
+   git clone https://github.com/fakrul-hossain/ShubhoPorinoy-Client
 "# ShubhoPorinoy-Client" 
